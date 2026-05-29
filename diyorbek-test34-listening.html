@@ -447,7 +447,33 @@
   </div>
   <p class="q-label" style="margin-top:24px">Questions 38–40</p>
   <p class="instruction">Label the diagram (Roller drying).<br><strong>Write NO MORE THAN THREE WORDS for each answer.</strong></p>
-  <p style="font-style:italic; color:var(--text-muted); margin:8px 0">Diagram description: two rollers, with an arrow at the top (Q38), an arrow on the right side (Q39), and a container below (Q40).</p>
+  <div class="img-wrap" style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center">
+<svg viewBox="0 0 500 260" width="100%" style="max-width:520px">
+  <text x="250" y="18" text-anchor="middle" font-size="13" font-weight="700">Roller drying</text>
+  <!-- top inflow arrow with Q38 label box -->
+  <text x="250" y="38" text-anchor="middle" font-size="11" font-weight="600">38</text>
+  <path d="M 245 48 L 240 60 L 250 60 L 245 48 Z M 245 48 L 245 70" stroke="#333" fill="#333" stroke-width="2"/>
+  <line x1="245" y1="70" x2="245" y2="100" stroke="#333" stroke-width="2"/>
+  <!-- two rollers (circles) -->
+  <circle cx="160" cy="140" r="38" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="340" cy="140" r="38" fill="none" stroke="#333" stroke-width="3"/>
+  <!-- direction arrows on rollers -->
+  <line x1="125" y1="140" x2="200" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrL)"/>
+  <line x1="375" y1="140" x2="300" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrR)"/>
+  <defs>
+    <marker id="arrL" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#333"/></marker>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#333"/></marker>
+  </defs>
+  <!-- right-side arrow Q39 -->
+  <line x1="390" y1="140" x2="430" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrR)"/>
+  <text x="450" y="143" font-size="11" font-weight="600">39</text>
+  <!-- container at bottom-left Q40 -->
+  <polygon points="60,200 130,200 120,250 70,250" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="110" y1="200" x2="125" y2="180" stroke="#333" stroke-width="2"/>
+  <text x="135" y="180" font-size="11" font-weight="600">40</text>
+  <text x="95" y="232" text-anchor="middle" font-size="10">container</text>
+</svg>
+</div>
   <div class="label-row">
     <div class="label-item"><span class="qnum-prefix">38</span><label>top arrow (input)</label><input type="text" class="ans-input" data-q="38" oninput="updateProgress()" style="width:200px"></div>
     <div class="label-item"><span class="qnum-prefix">39</span><label>right side arrow</label><input type="text" class="ans-input" data-q="39" oninput="updateProgress()" style="width:200px"></div>
